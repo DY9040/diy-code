@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS diy_code_db;
+CREATE DATABASE diy_code_db;
