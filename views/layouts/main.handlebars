@@ -5,34 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIY-Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300&family=Nunito+Sans:wght@300&family=Oswald:wght@300&family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>
-                <a href="/">
-                    DIY-Code
-                </a>
-            </h1>
+        <div class="glitch" data-text="DIY-Code">DIY-Code</div>
+        <div class="glow">DIY-Code</div>
+        <p class="subtitle">Code Forum</p>
+    </div>
+
+
             <nav>
-                {{#if loggedIn}}
-                <a href="/dashboard">Dashboard</a>
-                <button id="logout" class="btn-0-style">Logout</button>
-                {{else}}
-                <a href="/login">Login</a>
-                {{/if}}
+                <ul>
+                    <li><a href="/">DIY-Code</a></li>
+                    {{#if loggedIn}}
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><button id="logout" class="btn-0-style">Logout</button></li>
+                    {{else}}
+                    <li><a href="/login">Login</a></li>
+                    {{/if}}
+                </ul>
             </nav>
-        </header>
+
         <main>
             {{{ body}}}
         </main>
         <footer>
             Made by David Young &copy; 2022
         </footer>
-    </div>
+
     {{#if loggedIn}}
     <script src="/javascripts/logout.js"></script>
     {{/if}}
+    <div class="scanlines"></div>
 </body>
 </html>
