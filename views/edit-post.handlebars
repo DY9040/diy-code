@@ -1,12 +1,12 @@
-<article>
-    <a href="/dashboard"></a>
+<article class="edit-post-page">
+    <a href="/dashboard"> &larr; back to dashboard</a>
     <h2>
         Edit Post
     </h2>
     <form class="edit-post-form">
         <div>
-            <input name="post-title" type="txt" value="{{post.title}}" />
-            <span>({{post.post_body}})</span>
+            <input class="edit-body-input" name="post-title" type="txt" value="{{post.post_body}}" />
+            {{!--<span>({{post.post_body}})</span>--}}
         </div>
         <div>
             {{user.username}} | {{format_date created_at}}

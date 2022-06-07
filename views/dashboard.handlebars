@@ -1,15 +1,14 @@
-<section>
+<div class="dashboard-page">
+<section class="create-new-post">
     <h2>Create a brand new post</h2>
     <form class="latest-post-form">
         <div>
-            <label for="post-title">Put a Title</label>
-            <input type="text" id="post-title" name="post-title" />
+            <input class="post-title-input" placeholder="Title"  type="text" id="post-title" name="post-title"></input>
         </div>
         <div>
-            <label for="post-body">Link</label>
-            <input id="post-body" name="post-body" />
+            <input class="post-body-input" placeholder="Body" id="post-body" name="post-body"></input>
         </div>
-        <button type="submit" class="btn">Create</button>
+        <button type="submit" class="btn">Post</button>
     </form>
 </section>
 
@@ -28,3 +27,4 @@
 {{/if}}
 
 <script src="/javascript/add-post.js"></script>
+</div>
